@@ -1,0 +1,76 @@
+.superSales{
+    width: 100%;
+    height: 550px;
+    margin-bottom: 50px;
+    &_container{
+        width: 80%;
+        height: 550px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+        &_title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            span{
+                font-size: 36px;
+            }
+            p{
+                width: 540px;
+                font-size: 15px;
+                color: #777777;
+                text-align: center;
+                line-height: 22px;
+            }
+        }
+        &_block{
+            display: flex;
+            &_allCard{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                &_card{
+                    cursor: pointer;
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+                    margin-right:30px ;
+                    img{
+                        width: 70px;
+                        height: 70px;
+                    }
+                    &_info{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        p{
+                            font-size: 14px;
+                    transition:all 300ms;
+
+                        }
+                        &_price{
+                            display: flex;
+                            gap: 20px;
+                            span{
+                                font-size: 14px;
+                                font-weight:bold;
+                            }
+                            &_before{
+                                text-decoration: line-through;
+                                color: #777777;
+                            }
+                        }
+                    }
+                    &:hover p{
+                        color: #ffc107;
+                    }
+                }
+            }
+        }
+    }
+}

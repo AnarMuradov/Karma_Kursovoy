@@ -1,0 +1,43 @@
+.imageSection{
+    width: 100%;
+    height: 445px;
+    &_container{
+    width: 80%;
+    height: 445px;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content:space-between ;
+    &_blok1{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        &_row1{
+            display: flex;
+            gap: 30px;
+            max-height: 191px;
+            img{
+                height: 191px;
+            }
+        }
+        &_row2{
+            display: flex;
+            gap: 30px;
+            max-height: 191px;
+            img{
+                height: 191px;
+            }
+        }
+    }
+    &_blok2{
+        display: flex;
+        align-items: flex-start;
+        max-height: 100%;
+        img{
+            height: 412px;
+            width: 400px;
+        }
+    }
+    }
+}
